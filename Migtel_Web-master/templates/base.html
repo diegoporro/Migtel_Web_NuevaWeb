@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <title>Comunicaciones Migtel C.A.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500">
+    <link rel="stylesheet" href="{% static 'static/fonts/icomoon/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'static/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/animate.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'static/fonts/flaticon/font/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/fl-bigmug-line.css' %}">
+
+    <link rel="stylesheet" href="{% static 'static/css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'static/css/style.css' %}">
+
+</head>
+
+<body>
+
+<div class="site-wrap">
+
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+
+    {# Navbar #}
+{#    <div class="site-navbar-wrap bg-transparent" style="box-shadow: grey 2px 2px 5px;" >#}
+{#        <div class="site-navbar-top">#}
+{#            <div class="container py-2">#}
+{#                <div class="row align-items-center">#}
+{##}
+{#                    <div class="col-6 col-md-6 col-lg-2">#}
+{#                        <a href="{% url 'main' %}" class="d-flex align-items-center site-logo">#}
+{#                            <img src="{% static 'static/images/Migtel fondo transparente.png' %}" alt="" style="width: 60%">#}
+{#                        </a>#}
+{#                    </div>#}
+{##}
+{#                    <div class="col-6 col-md-6 col-lg-10">#}
+{##}
+{#                    </div>#}
+{##}
+{##}
+{##}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="site-navbar bg-transparent">#}
+{#            <div class="container py-1">#}
+{#                <div class="row align-items-center">#}
+{##}
+{#                    <div class="col-8 col-md-8 col-lg-8">#}
+{#                        <nav class="site-navigation text-left text-black" role="navigation">#}
+{#                            <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>#}
+{##}
+{#                            <ul class="site-menu js-clone-nav d-none d-lg-block">#}
+{#                                <li class="active">#}
+{#                                    <a href="{% url 'main' %}">Home</a>#}
+{#                                </li>#}
+{#                                <li><a href="{% url 'nosotros' %}">Nosotros</a></li>#}
+{#                                <li><a href="{% url 'cobertura' %}">Cobertura</a></li>#}
+{#                                <li class="has-children">#}
+{#                                    <a>Servicios</a>#}
+{#                                    <ul class="dropdown arrow-top">#}
+{#                                        <li><a href="{% url 'servicios' %}">Nuestros servicios</a></li>#}
+{#                                        <li><a href="{% url 'solicitar' %}">Solicitar servicio</a></li>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                                <li class="has-children">#}
+{#                                    <a>Mas info</a>#}
+{#                                    <ul class="dropdown arrow-top">#}
+{#                                        <li><a href="#">Registrar pago</a></li>#}
+{#                                        <li><a href="#">Habilitacion CONATEL</a></li>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                                <li><a href="{% url 'contacto' %}">Contacto</a></li>#}
+{#                            </ul>#}
+{#                        </nav>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+
+    {# Carousel #}
+    {% block carousel %}{% endblock %}
+
+    {# Nosotros #}
+    {% block nosotros %}{% endblock %}
+
+    {# Zona de Cobertura #}
+    {% block cobertura %}{% endblock %}
+
+    {# Servicios #}
+    {% block servicios %}{% endblock %}
+
+    {# Contacto #}
+    {% block contact %}{% endblock %}
+
+    {# habilitacion #}
+{#    {% block habilitacion %}{% endblock %}#}
+
+    {# registrarpago #}
+{#    {% block registrarpago %}{% endblock %}#}
+
+    {# soporte #}
+    {% block soporte %}{% endblock %}
+
+
+    {# Por que escogernos #}
+    {% block escogernos %}{% endblock %}
+    {#    <div class="site-section">#}
+    {#        <div class="container">#}
+    {#            <div class="row justify-content-center text-center mb-5">#}
+    {#                <div class="col-md-6" data-aos="fade" >#}
+    {#                    <h2>Why Choose Us</h2>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#            <div class="row hosting">#}
+    {#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-4" data-aos="fade" data-aos-delay="100">#}
+    {##}
+    {#                    <div class="unit-3 h-100 bg-white">#}
+    {##}
+    {#                        <div class="d-flex align-items-center mb-3 unit-3-heading">#}
+    {#                            <div class="unit-3-icon-wrap mr-4">#}
+    {#                                <svg class="unit-3-svg" xmlns="http://www.w3.org/2000/svg" width="59px" height="68px">#}
+    {#                                    <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M29.000,66.000 L1.012,49.750 L1.012,17.250 L29.000,1.000 L56.988,17.250 L56.988,49.750 L29.000,66.000 Z"></path>#}
+    {#                                </svg><span class="unit-3-icon icon fl-bigmug-line-equalization3"></span>#}
+    {#                            </div>#}
+    {#                            <h2 class="h5">High Quality Hardware</h2>#}
+    {#                        </div>#}
+    {#                        <div class="unit-3-body">#}
+    {#                            <p>Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos.</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {##}
+    {#                </div>#}
+    {#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-4" data-aos="fade" data-aos-delay="200">#}
+    {##}
+    {#                    <div class="unit-3 h-100 bg-white">#}
+    {##}
+    {#                        <div class="d-flex align-items-center mb-3 unit-3-heading">#}
+    {#                            <div class="unit-3-icon-wrap mr-4">#}
+    {#                                <svg class="unit-3-svg" xmlns="http://www.w3.org/2000/svg" width="59px" height="68px">#}
+    {#                                    <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M29.000,66.000 L1.012,49.750 L1.012,17.250 L29.000,1.000 L56.988,17.250 L56.988,49.750 L29.000,66.000 Z"></path>#}
+    {#                                </svg><span class="unit-3-icon icon fl-bigmug-line-cube29"></span>#}
+    {#                            </div>#}
+    {#                            <h2 class="h5">Top Data Centers</h2>#}
+    {#                        </div>#}
+    {#                        <div class="unit-3-body">#}
+    {#                            <p>Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos.</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {##}
+    {#                </div>#}
+    {#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-4" data-aos="fade" data-aos-delay="300">#}
+    {##}
+    {#                    <div class="unit-3 h-100 bg-white">#}
+    {##}
+    {#                        <div class="d-flex align-items-center mb-3 unit-3-heading">#}
+    {#                            <div class="unit-3-icon-wrap mr-4">#}
+    {#                                <svg class="unit-3-svg" xmlns="http://www.w3.org/2000/svg" width="59px" height="68px">#}
+    {#                                    <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M29.000,66.000 L1.012,49.750 L1.012,17.250 L29.000,1.000 L56.988,17.250 L56.988,49.750 L29.000,66.000 Z"></path>#}
+    {#                                </svg><span class="unit-3-icon icon fl-bigmug-line-airplane86"></span>#}
+    {#                            </div>#}
+    {#                            <h2 class="h5">Outstanding Speed</h2>#}
+    {#                        </div>#}
+    {#                        <div class="unit-3-body">#}
+    {#                            <p>Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos.</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {##}
+    {#                </div>#}
+    {##}
+    {#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-4" data-aos="fade" data-aos-delay="400">#}
+    {##}
+    {#                    <div class="unit-3 h-100 bg-white">#}
+    {##}
+    {#                        <div class="d-flex align-items-center mb-3 unit-3-heading">#}
+    {#                            <div class="unit-3-icon-wrap mr-4">#}
+    {#                                <svg class="unit-3-svg" xmlns="http://www.w3.org/2000/svg" width="59px" height="68px">#}
+    {#                                    <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M29.000,66.000 L1.012,49.750 L1.012,17.250 L29.000,1.000 L56.988,17.250 L56.988,49.750 L29.000,66.000 Z"></path>#}
+    {#                                </svg><span class="unit-3-icon icon fl-bigmug-line-hot67"></span>#}
+    {#                            </div>#}
+    {#                            <h2 class="h5">Amazing Uptime</h2>#}
+    {#                        </div>#}
+    {#                        <div class="unit-3-body">#}
+    {#                            <p>Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos.</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {##}
+    {#                </div>#}
+    {#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-4" data-aos="fade" data-aos-delay="500">#}
+    {##}
+    {#                    <div class="unit-3 h-100 bg-white">#}
+    {##}
+    {#                        <div class="d-flex align-items-center mb-3 unit-3-heading">#}
+    {#                            <div class="unit-3-icon-wrap mr-4">#}
+    {#                                <svg class="unit-3-svg" xmlns="http://www.w3.org/2000/svg" width="59px" height="68px">#}
+    {#                                    <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M29.000,66.000 L1.012,49.750 L1.012,17.250 L29.000,1.000 L56.988,17.250 L56.988,49.750 L29.000,66.000 Z"></path>#}
+    {#                                </svg><span class="unit-3-icon icon fl-bigmug-line-headphones32"></span>#}
+    {#                            </div>#}
+    {#                            <h2 class="h5">Best Support</h2>#}
+    {#                        </div>#}
+    {#                        <div class="unit-3-body">#}
+    {#                            <p>Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos.</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {##}
+    {#                </div>#}
+    {#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-4" data-aos="fade" data-aos-delay="600">#}
+    {##}
+    {#                    <div class="unit-3 h-100 bg-white">#}
+    {##}
+    {#                        <div class="d-flex align-items-center mb-3 unit-3-heading">#}
+    {#                            <div class="unit-3-icon-wrap mr-4">#}
+    {#                                <svg class="unit-3-svg" xmlns="http://www.w3.org/2000/svg" width="59px" height="68px">#}
+    {#                                    <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M29.000,66.000 L1.012,49.750 L1.012,17.250 L29.000,1.000 L56.988,17.250 L56.988,49.750 L29.000,66.000 Z"></path>#}
+    {#                                </svg><span class="unit-3-icon icon fl-bigmug-line-user143"></span>#}
+    {#                            </div>#}
+    {#                            <h2 class="h5">Client Reviews</h2>#}
+    {#                        </div>#}
+    {#                        <div class="unit-3-body">#}
+    {#                            <p>Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos.</p>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {##}
+    {#                </div>#}
+    {##}
+    {#            </div>#}
+    {##}
+    {#        </div>#}
+    {#    </div>#}
+
+    {# Footer #}
+    <footer class="site-footer">
+        <div class="container">
+                <div class="col-md-12">
+                        <center>© Copyright {% block year %}{% endblock %} - Comunicaciones MigTel, C.A. RIF.: J-40212711-1</center>
+                </div>
+            </div>
+    </footer>
+</div>
+
+{# JS #}
+<script src="{% static 'static/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'static/js/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'static/js/jquery-ui.js' %}"></script>
+<script src="{% static 'static/js/popper.min.js' %}"></script>
+<script src="{% static 'static/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'static/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'static/js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'static/js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'static/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'static/js/bootstrap-datepicker.min.js' %}"></script>
+<script src="{% static 'static/js/aos.js' %}"></script>
+<script src="{% static 'static/js/main.js' %}"></script>
+
+</body>
+
+</html>

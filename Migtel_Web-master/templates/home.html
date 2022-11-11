@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Comunicaciones Migtel C.A. | {{ title }}</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'static/images/Imag-24.png'  %}" />
+    <!-- Font Awesome icons (free version)-->
+    <link href="{% static 'static/vendor/font-awesome/css/font-awesome.css'%}" rel="stylesheet">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'static/css/styles-2.css' %}" rel="stylesheet"/>
+    <!-- Top button-->
+    <style>
+        #myBtn {
+            width: 50px;
+            height: 50px;
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 15px; /* Place the button at the bottom of the page */
+            right: 25px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 5px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+            font-size: 10px; /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555; /* Add a dark-grey background on hover */
+        }
+    </style>
+</head>
+
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="text-shadow: 2px 2px 5px black; height: 12%">
+    <div class="container px-5">
+        {#            <a class="navbar-brand" href="{% url 'main' %}"><img src="{% static 'static/images/Imag-01.png' %}" width="12%" alt="Migtel"></a>#}
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="navbar-brand"><a class="nav-link" style="display: block" href="{% url 'main' %}"><img src="{% static 'static/images/Imag-01.png' %}" width="10%" alt="Migtel"></a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Cobertura</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'contacto' %}">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Header-->
+<header class="masthead text-center text-white" style="text-shadow: 2px 2px 5px gray; background-image: url({% static 'static/images/Imag-02.png' %}); width: 100%">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <h2 class="masthead-subheading mb-0">LA ERA DIGITAL A TU ALCANCE</h2>
+            <p class="masthead-subheading mb-0">¿Buscas la mejor velocidad de internet?</p><br><br>
+            <p class="btn btn-secondary text-white btn-xl rounded-pill mt-5" href="#scroll" style="text-shadow: 2px 2px 5px gray">Tenemos opciones para satisfacer las necesidades de conexion de su empresa u hogar</p><br><br><br><br>
+        </div>
+    </div>
+</header><br><br>
+
+<!-- Content cobertura-->
+<header class="masthead text-center" style="background-image: url({% static 'static/images/Imag-18.png' %}); width: auto">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <center><h3 style="text-shadow: 2px 2px 5px lightgray;">Contamos con equipos de ultima generacion en nuestra infraestructura <br> para brindarte el mejor servicio</h3><br><br><br>
+                        <h4 style="text-shadow: 2px 2px 5px lightgray;"> ZONAS DE COBERTURA</h4></center>
+                </div>
+            </div><br><br>
+            <center>
+                <div class="row">
+                    <div class="col">
+                        <center><div class="p-5">
+                            <img class="img-fluid" src="{% static 'static/images/Imag-05.png' %}" alt="..." width="20%"/>
+                        </div>
+                            <h4 class="text-secondary" style="text-shadow: 2px 2px 5px lightgray;">Caracas</h4></center>
+                    </div>
+                    <div class="col">
+                        <center><div class="p-5">
+                            <img class="img-fluid" src="{% static 'static/images/Imag-07.png' %}" alt="..." width="20%"/>
+                        </div>
+                            <h4 class="text-secondary" style="text-shadow: 2px 2px 5px lightgray;">Guatire, Guarenas y Araira</h4></center>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <center><div class="p-5">
+                            <img class="img-fluid" src="{% static 'static/images/Imag-06.png' %}" alt="..." width="12%"/>
+                        </div>
+                            <h4 class="text-secondary" style="text-shadow: 2px 2px 5px lightgray;">Higuerote y Carenero</h4></center>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+</header>
+
+<!-- Content info-->
+<header class="masthead text-center" style="background-image: url({% static 'static/images/Imag-09.png' %}); width: auto">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <div class="container px-3">
+                <div class="masthead-content d-flext">
+
+
+                    <h2 class="display-5 text-white" style="text-shadow: 2px 2px 5px lightgray;"><b>Somos los mejores</b></h2>
+                    <h2 class="display-5 text-white" style="text-shadow: 2px 2px 5px lightgray;"><b> en Telecomunicaciones</b></h2>
+                    <p class="text-white float-righ">Ofrecemos servicios de acceso a Internet, transporte de datos IP en modalidades punto a punto y punto multipunto, venta de equipos, desarrollo de paginas web, consultoria, hosting, housing y servicios de Integracion de telecomunicaciones y seguridad.</p><br>
+                    <p class="text-white float-righ">Contamos con la Habilitacion General No. HGTS-00488, otorgada por la Comision Nacional de Telecomunicaciones de Venezuela CONATEL, con los atributos de Servicio de Internet, Transporte, Establecimiento y Eplotacion de Red de Telecomunicaciones. Somos afiliados de Camara Nacional de Empresa de Telecomunicaciones, contando con acceso a informacion actualizada del sector y alianzas, tenemos asignados bloques de direcciones IP Publicas IPv4 e IPv6 y un Sistema Autonomo  (ASN) disponible para nuestros clientes empresariales.</p><br>
+                    <center><img class="img-fluid rounded-1" src="{% static 'static/images/Imag-10.png' %}" alt="..." width="80%" style="box-shadow: 2px 2px 5px gray"/></center>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Content servicios-->
+<header class="masthead text-center" style="background-image: url({% static 'static/images/Imag-18.png' %}); width: auto">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <div class="container px-3">
+                <div class="masthead-content">
+                    <div class="container px-5">
+                        <center><h1 class="masthead-subheading mb-0" style="text-shadow: 2px 2px 5px lightgray;">Nuestros Servicios</h1></center>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="p-5"><img class="img-fluid" src="{% static 'static/images/Imag-11.png' %}" alt="..." width="100%"/></div>
+                                    <div class="p-5"><img class="img-fluid" src="{% static 'static/images/Imag-12.png' %}" alt="..." width="100%"/></div>
+                                </div><br><br>
+                                <div class="col-6">
+                                    <div class="p-5"><img class="img-fluid" src="{% static 'static/images/Imag-13.png' %}" alt="..." width="100%"/></div>
+                                    <div class="p-5"><img class="img-fluid" src="{% static 'static/images/Imag-14.png' %}" alt="..." width="100%"/></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col bg-transparent align-content-sm-stretch">
+                        <div class="p-5"><img class="img-fluid" src="{% static 'static/images/Imag-15.png' %}" alt="..." width="100%"/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Content planes-->
+<header class="masthead text-center" style="background-image: url({% static 'static/images/Imag-16.png' %}); width: auto">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <div class="container px-3">
+                <div class="masthead-content">
+                    <div class="container px-5">
+                        <center><h1 class="masthead-subheading mb-0" style="text-shadow: 2px 2px 5px lightgray;">Planes de Internet Banda Ancha</h1></center>
+                    </div>
+                </div>
+            </div><br><br>
+            <center>
+                <div class="row px-3">
+                    <div class="col">
+                        <table class="table table-hover" style="box-shadow: 2px 2px 2px gray">
+                            <thead>
+                            <tr class="bg-dark text-white">
+                                <th scope="col"><center>Internet Empresarial</center></th>
+                            </tr>
+                            </thead>
+                            <tbody class="bg-white">
+                            <tr>
+                                <td><img src="{% static 'static/images/Imag-17.png' %}" alt="" width="4%"> Instalaciones: inalambricas por fibra optica o enlaces satelitales.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="{% static 'static/images/Imag-17.png' %}" alt="" width="4%"> Planes dedicados, ilimitados y simetricos con velocidades desde 2 mbps hasta 10 Gbps, sin reuso de ancho de banda.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="{% static 'static/images/Imag-17.png' %}" alt="" width="4%"> Planes compartidos, ilimitados, simetricos con velocidades desde 2 Mbps hasta 100 Mbps, con uno inteligente de ancho de banda.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="{% static 'static/images/Imag-17.png' %}" alt="" width="4%"> Ofrecemos direcciones IPs Publicas IPv4 e IPv6 que requiera para satisfacer las necesidades de su empresa.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="{% static 'static/images/Imag-17.png' %}" alt="" width="4%"> Para proceder a instalar se debe preparar la instalacion y el primer mes de servicio. La instalacion se realiza en no mas de 7 dias luego de recibido el pago correspondiente.</td>
+                            </tr>
+                            <tr>
+                                <td><center><p class="btn btn-secondary text-white rounded-pill mt-3" href="#scroll" style="box-shadow: 2px 2px 5px gray">Contratar</p></center></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col">
+                        <table class="table table-hover" style="box-shadow: 2px 2px 2px grey">
+                            <thead class="bg-dark text-white">
+                            <tr>
+                                <th scope="col"><center>Internet Residencial</center></th>
+                            </tr>
+                            </thead>
+                            <tbody class="bg-white">
+                            <tr>
+                                <td><img src="{% static 'static/images/Imag-17.png' %}" alt="" width="4%"> Conexion inalambrica a traves de antenas microondas.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="{% static 'static/images/Imag-17.png' %}" alt="" width="4%"> Planes dedicados y compartidos, ilimitados y simetricos, con velocidades desde 2 Mbps hasta 100 Mbps.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="{% static 'static/images/Imag-17.png' %}" alt="" width="4%"> Tenemos instalaciones compartidas para edificios y urbanizaciones.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="{% static 'static/images/Imag-17.png' %}" alt="" width="4%"> Tiempo de instalacion 7 dias maximo luego de la inspeccion.</td>
+                            </tr>
+                            <tr>
+                                <td><center><p class="btn btn-secondary text-white rounded-pill mt-3" href="#scroll" style="box-shadow: 2px 2px 5px gray">Contratar</p></center></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+</header>
+
+<!-- Content contacto-->
+<header class="masthead text-center" style="background-image: url({% static 'static/images/Imag-18.png' %}); width: auto">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <h3 class="masthead-subheading mb-0" style="text-shadow: 2px 2px 5px gray; ">COMUNICATE CON NOSOTROS</h3>
+            <div class="site-section">
+                <div class="container">
+                    <div class="col-md-12 col-lg-12 mb-5 mb-lg-12" data-aos="fade" data-aos-delay="100">
+                        <div class="h-100 bg-transparent">
+
+                            <div class="d-flex align-items-center mb-3 unit-3-heading">
+                            </div>
+                            <div class="unit-5-body">
+                                <h5>Sede Administrativa</h5>
+                                <p>
+                                    Av. Principal de Bello Monte, Centro Comercial Bello Monte, Nivel 11, Oficina I. Urbanización Colinas de Bello Monte. Caracas. Zona Postal 1060.
+                                </p>
+                                <p>Telefonos: (212) 753 0235 - (212) 753 6857</p><hr>
+                                <div class="row">
+                                    <div class="col-md-5 col-lg-5 mb-lg-5">
+                                        <form method="post">
+                                            {% csrf_token %}
+                                            {{ form.as_p }}
+                                            <br>
+                                            <button class="btn btn-secondary btn-block text-white" type="submit" style="box-shadow: lightgray 2px 2px 5px;">Enviar</button>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 mb-lg-2" data-toggle="tooltip" title="Encuentranos aqui!"><br>
+                                        <center>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.1371296387565!2d-66.88292748571484!3d10.489854467287396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58de0a09a533%3A0xf13db8bbd6a91048!2sCentro%20Comercial%20Bello%20Monte%2C%20Caracas%2C%20Distrito%20Capital!5e0!3m2!1ses!2sve!4v1594790842363!5m2!1ses!2sve" class="rounded" width="400" height="300" frameborder="0" style="border:0; box-shadow: lightgray 2px 2px 5px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><br><br>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" class="btn-secondary text-white"><i class="fa fa-fw fa-arrow-up"></i></button>
+
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <center>
+        <div class="row">
+            <div class="col text-white"><a  href="https://ve.linkedin.com/company/comunicaciones-migtel-c-a"><img src="{% static 'static/images/Imag-19.png' %}" alt="" width="5%"></a> Comunicaciones Migtel C.A.</div>
+            <div class="col text-white"><a href="https://www.instagram.com/migtelve/"><img src="{% static 'static/images/Imag-20.png' %}" alt="" width="5%"></a> @migtelve</div>
+            <div class="col text-white"><a href="https://www.facebook.com/Migtelve/"><img src="{% static 'static/images/Imag-21.png' %}" alt="" width="5%"></a> Comunicaciones Migtel</div>
+        </div><br>
+    </center>
+    <div class="container px-5"><p class="m-0 text-center text-white small">© Copyright {% block year %}{% endblock %} - Comunicaciones MigTel, C.A. RIF.: J-40212711-1</p></div>
+</footer>
+<div>
+    <div class="bg-secondary text-secondary"><p class="m-0 text-center small"> . </p></div>
+</div>
+
+
+{#    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>#}
+<!-- Core theme JS-->
+<script src="{% static 'static/js/scripts.js' %}"></script>
+<script src="{% static 'static/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'static/js/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'static/js/jquery-ui.js' %}"></script>
+<script src="{% static 'static/js/popper.min.js' %}"></script>
+<script src="{% static 'static/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'static/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'static/js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'static/js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'static/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'static/js/bootstrap-datepicker.min.js' %}"></script>
+<script src="{% static 'static/js/aos.js' %}"></script>
+<script>
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block cobertura %}
+    <div class="site-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-md-6" data-aos="fade">
+                    <h2 style="text-shadow: lightgray 1px 1px">Zonas de cobertura</h2>
+                </div>
+            </div>
+
+            <div class="row hosting">
+                <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+
+                    <div class="unit-2 text-center border py-5 h-100 bg-white">
+                        <span class="icon fl-bigmug-line-map87 text-info" style="text-shadow: lightgray 2px 2px"></span>
+                        <h3 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Caracas - Zona 1</h3>
+                        <p class="mb-4 text-gray-500">
+                            {% for foo in ccs_1 %}
+                                {{ foo }}.
+                            {% endfor %}
+                        </p><br>
+                        <p><b>Movil y WhatsApp de Soporte - 0424 2920647</b></p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+
+                    <div class="unit-2 text-center border py-5 h-100 bg-white">
+                        <span class="icon fl-bigmug-line-map87 text-info" style="text-shadow: lightgray 2px 2px"></span>
+                        <h3 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Caracas - Zona 2</h3>
+                        <p class="mb-4 text-gray-500">
+                            {% for foo in ccs_2 %}
+                                {{ foo }}.
+                            {% endfor %}
+                        </p><br>
+                        <p><b>Movil y WhatsApp de Soporte - 0424 1833345</b></p>
+                    </div>
+
+                </div>
+            </div><br><br>
+
+            <div class="row hosting">
+                <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+
+                    <div class="unit-2 text-center border py-5 h-100 bg-white">
+                        <span class="icon fl-bigmug-line-map87 text-info" style="text-shadow: lightgray 2px 2px"></span>
+                        <h3 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Guatire - Zona 3</h3>
+                        <p class="mb-4 text-gray-500">
+                            {% for foo in gte %}
+                                {{ foo }}.
+                            {% endfor %}
+                        </p><br>
+                        <p><b>Movil y WhatsApp de Soporte - 0414 1805263</b></p>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+
+                    <div class="unit-2 text-center border py-5 h-100 bg-white">
+                        <span class="icon fl-bigmug-line-map87 text-info" style="text-shadow: lightgray 2px 2px"></span>
+                        <h3 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Barlovento - Zona 4</h3>
+                        <p class="mb-4 text-gray-500">
+                            {% for foo in hgt %}
+                                {{ foo }}.
+                            {% endfor %}
+                        </p><br>
+                        <p><b>Movil y WhatsApp de Soporte - 0424 2357123</b></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block localtime %}
+    {{ localtime }}
+{% endblock %}
+
+{% block year %}
+    {{ year }}
+{% endblock %}

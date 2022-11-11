@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block nosotros %}
+    <div class="site-section">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-md-6" data-aos="fade">
+                    <h1 style="text-shadow: lightgray 1px 1px">Nosotros</h1>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-12 mb-5 mb-lg-12" data-aos="fade" data-aos-delay="100">
+                <div class="h-100 bg-white">
+
+                    <div class="d-flex align-items-center mb-3 unit-3-heading">
+                    </div>
+                    <div class="unit-3-body">
+                        <p>
+                            Somos una organización que presta servicios de acceso a Internet, Transporte de datos IP en modalidades punto a punto y punto-multipunto, transporte de voz sobre IP, venta de equipos, desarrollo de paginas web, consultoría y servicios de integración de telecomunicaciones y seguridad.
+                        </p>
+                        <p>
+                            Actualmente tenemos cobertura en: Caracas, Guatire y Barlovento Higuerote.
+                        </p>
+                        <p>
+                            Contamos con un Backbone de Comunicaciones IP con equipos de última generación y respaldo eléctrico en todas nuestras Celdas de comunicaciones, que nos permite ofrecer altos niveles de disponibilidad, contamos actualmente con dos salidas internacionales a través de los más importantes proveedores de acceso a Internet internacionales con el propósito de asegurar que nuestro tráfico este balanceado sobre dos de los cables submarinos que llegan a Venezuela.
+                        </p>
+                        <p>Contamos con la  Habilitación General No. HGTS-00488, otorgada por la Comisión Nacional de Telecomunicaciones de Venezuela <b>CONATEL</b>, con los atributos de Servicios de Internet, Transporte, Establecimiento y Explotación de Red de Telecomunicaciones.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block localtime %}
+    {{ localtime }}
+{% endblock %}
+
+{% block year %}
+    {{ year }}
+{% endblock %}

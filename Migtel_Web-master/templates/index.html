@@ -1,0 +1,459 @@
+{#{% extends 'base.html' %}#}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <title>Comunicaciones Migtel C.A. | {{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500">
+    <link rel="stylesheet" href="{% static 'static/fonts/icomoon/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'static/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/animate.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'static/fonts/flaticon/font/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/fl-bigmug-line.css' %}">
+
+    <link rel="stylesheet" href="{% static 'static/css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'static/css/style.css' %}">
+
+</head>
+
+<body>
+
+<div class="site-wrap">
+
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+
+    {# Navbar #}
+<section>
+    <div class="site-blocks-cover" style="background-image: url({% static 'static/images/Imag-02.png' %}); width: auto">
+        <div class="site-navbar-wrap bg-transparent">
+            <div class="site-navbar-top">
+                <div class="container py-2">
+                    <div class="row align-items-baseline align-text-top">
+
+                        <div class="col-4 col-md-4 col-lg-2" style="text-shadow: grey 2px 2px 2px">
+                            <h5><a href="{% url 'main' %}" class="text-white">Home</a></h5>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-2" style="text-shadow: grey 2px 2px 2px">
+                            <h5><a href="{% url 'main' %}" class="text-white">Nosotros</a></h5>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-2" style="text-shadow: grey 2px 2px 2px">
+                            <h5><a href="{% url 'main' %}" class="text-white">Cobertura</a></h5>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-2" style="text-shadow: grey 2px 2px 2px">
+                            <h5><a href="{% url 'main' %}" class="text-white">Servicios</a></h5>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-2" style="text-shadow: grey 2px 2px 2px">
+                            <h5><a href="{% url 'main' %}" class="text-white">Contacto</a></h5>
+                        </div>
+                        <div class="col-10 col-md-10 col-lg-2">
+                            <a href="{% url 'main' %}" class="d-flex align-items-center site-logo">
+                                <img src="{% static 'static/images/Imag-01.png'%}" width="100%">
+                            </a>
+                        </div><br>
+
+
+                        <div class="text-white text-justify float-right">
+                            <h2 style="text-shadow: grey 2px 2px 2px"><b> LA ERA DIGITAL A TU ALCANCE </b></h2><br>
+                            <h4> ¿Buscas la mejor velocidad de Internet? </h4><br>
+                            <h5>Tenemos opciones para satisfacer las necesidades de conexion de su empresa o residencia.</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</div>
+</section>
+
+    {# Cobertura #}
+<section>
+    <div class="site-blocks-cover justify-content-center text-center" style="background-image: url({% static 'static/images/Imag-18.png' %});width: auto">
+
+        <br><div class="align-items-center justify-content-center text-center text-black">
+            Contamos con equipos de ultima generacion en nuestra infraestructura para brindarte el mejor servicio.<br>
+        </div><br><br>
+
+        <h2 class="text-info" style="text-shadow:grey 2px 2px 2px"><b>ZONAS DE COBERTURA</b></h2><br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col align-self-start">
+                    <img src="{% static 'static/images/Imag-05.png' %}" alt="Caracas" width="15%"><br><br>
+                  <a href="#"><h6><b>CARACAS</b></h6></a>
+                </div>
+                <div class="col align-self-end">
+                        <img src="{% static 'static/images/Imag-07.png' %}" alt="Guatire" width="15%"><br><br>
+                      <a href="#"><h6><b>GUATIRE-GUARENAS-ARAIRA</b></h6></a>
+                </div>
+                <div class="col align-self-start">
+                    <img src="{% static 'static/images/Imag-06.png' %}" alt="Higuerote" width="15%"><br><br>
+                  <a href="#"><h6><b>HIGUEROTE-CARENERO</b></h6></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    {# Footer #}
+<section>
+    <footer class="site-blocks-cover" style="background-image: url({% static 'static/images/Imag-16-2.png' %}); width: auto">
+
+        <div class="row align-items-center justify-content-center text-center text-white">
+        <div class="col-sm">
+            <a href="www.linkedin.com/company/comunicaciones-migtel-c-a"><img src="{% static 'static/images/Imag-19.png' %}" width="10%" alt="LinkedIn Migtel"> LinkedIn</a>
+        </div>
+        <div class="col-sm">
+            <a href="www.instagram.com/migtelve/"><img src="{% static 'static/images/Imag-20.png' %}" width="10%" alt="Instagram Migtel"> Instagram</a>
+        </div>
+        <div class="col-sm">
+            <a href="www.facebook.com/Migtelve/"><img src="{% static 'static/images/Imag-21.png' %}" width="10%" alt="Facebook Migtel"> Facebook</a>
+        </div>
+            <div class="col-sm-10">© Copyright {% block year %}{% endblock %} - Comunicaciones MigTel, C.A. - RIF.: J-40212711-1</div>
+        </div>
+    </footer>
+</section>
+</div>
+
+{# JS #}
+<script src="{% static 'static/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'static/js/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'static/js/jquery-ui.js' %}"></script>
+<script src="{% static 'static/js/popper.min.js' %}"></script>
+<script src="{% static 'static/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'static/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'static/js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'static/js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'static/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'static/js/bootstrap-datepicker.min.js' %}"></script>
+<script src="{% static 'static/js/aos.js' %}"></script>
+
+<script src="{% static 'static/js/main.js' %}"></script>
+
+</body>
+
+</html>
+
+
+
+    {# Carousel #}
+    {% block carousel %}{% endblock %}
+
+    {# Nosotros #}
+    {% block nosotros %}{% endblock %}
+
+    {# Zona de Cobertura #}
+    {% block cobertura %}{% endblock %}
+
+    {# Servicios #}
+    {% block servicios %}{% endblock %}
+
+    {# Contacto #}
+    {% block contact %}{% endblock %}
+
+    {# habilitacion #}
+    {#    {% block habilitacion %}{% endblock %}#}
+
+    {# registrarpago #}
+    {#    {% block registrarpago %}{% endblock %}#}
+
+    {# soporte #}
+    {% block soporte %}{% endblock %}
+
+
+{# Carousel #}
+{#{% block carousel %}#}
+{#    <div class="slide-one-item home-slider owl-carousel">#}
+{##}
+{##}
+{#        <div class="site-blocks-cover overlay" style="background-image: url({% static 'static/images/Imag-02.png' %}); height: 100%"  data-stellar-background-ratio="0.1">#}
+{#            <div class="container">#}
+{#                <div class="row align-items-center justify-content-center text-center">#}
+{#                    <div class="col-md-10">#}
+{#                        <div class="site-navbar bg-transparent">#}
+{#            <div class="container py-1">#}
+{#                <div class="row align-items-center">#}
+{##}
+{#                    <div class="col-8 col-md-8 col-lg-8">#}
+{#                        <nav class="site-navigation text-left text-black" role="navigation">#}
+{#                            <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>#}
+{##}
+{#                            <ul class="site-menu js-clone-nav d-none d-lg-block">#}
+{#                                <li class="active">#}
+{#                                    <a href="{% url 'main' %}">Home</a>#}
+{#                                </li>#}
+{#                                <li><a href="{% url 'nosotros' %}">Nosotros</a></li>#}
+{#                                <li><a href="{% url 'cobertura' %}">Cobertura</a></li>#}
+{#                                <li class="has-children">#}
+{#                                    <a>Servicios</a>#}
+{#                                    <ul class="dropdown arrow-top">#}
+{#                                        <li><a href="{% url 'servicios' %}">Nuestros servicios</a></li>#}
+{#                                        <li><a href="{% url 'solicitar' %}">Solicitar servicio</a></li>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                                <li class="has-children">#}
+{#                                    <a>Mas info</a>#}
+{#                                    <ul class="dropdown arrow-top">#}
+{#                                        <li><a href="#">Registrar pago</a></li>#}
+{#                                        <li><a href="#">Habilitacion CONATEL</a></li>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                                <li><a href="{% url 'contacto' %}">Contacto</a></li>#}
+{#                            </ul>#}
+{#                        </nav>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{##}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div class="site-blocks-cover overlay" style="background-image: url({% static 'static/images/hero_bg_2.jpg' %}); height: 10%" data-aos="fade" data-stellar-background-ratio="0.5">#}
+{#            <div class="container">#}
+{#                <div class="row align-items-center justify-content-center text-center">#}
+{#                    <div class="col-md-10">#}
+{#                        <h1 class="mb-5" style="text-shadow: black 3px 3px 5px">12/6 Soporte Técnico</h1>#}
+{#                        <p class="mb-5">Lunes - Sabado </p>#}
+{#                        <p>#}
+{#                        <p class="btn btn-info py-3 px-5 rounded-0">8:00 AM - 8:00 PM</p>#}
+{#                        <p class="btn btn-info btn-outline-white py-3 px-5 rounded-0">Mantente en contacto</p>#}
+{#                        </p>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div class="site-blocks-cover overlay" style="background-image: url({% static 'static/images/img_2.jpg' %}); height: 10%" data-aos="fade" data-stellar-background-ratio="0.5">#}
+{#            <div class="container">#}
+{#                <div class="row align-items-center justify-content-center text-center">#}
+{#                    <div class="col-md-10">#}
+{#                        <h1 class="mb-2" style="text-shadow: black 3px 3px 5px">Infraestructura</h1>#}
+{#                        <h1 class="mb-2" style="text-shadow: black 3px 3px 5px">de</h1>#}
+{#                        <h1 class="mb-2" style="text-shadow: black 3px 3px 5px">Vanguardia</h1>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{##}
+{# Zonas de cobertura #}
+{#    <div class="site-section bg-light">#}
+{#        <div class="container">#}
+{#            <div class="row justify-content-center text-center mb-5">#}
+{#                <div class="col-md-6" data-aos="fade">#}
+{#                    <h2 style="text-shadow: lightgray 1px 1px">Zonas de cobertura</h2>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="row hosting">#}
+{#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">#}
+{##}
+{#                    <div class="unit-2 text-center border py-5 h-100 bg-white">#}
+{#                        <span class="icon fl-bigmug-line-map87 text-info" style="text-shadow: lightgray 2px 2px"></span>#}
+{#                        <h3 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Caracas</h3>#}
+{#                        <p class="mb-4 text-gray-500">Los Ruices, El Encantado / Macaracuay, Valle Arriba, Santa Fe, Santa Rosa de Lima</p>#}
+{#                        <a href="{% url 'cobertura' %}" class="btn btn-dark py-3 px-5 rounded-0" style="box-shadow: lightgray 2px 2px 2px 2px">Mas</a>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">#}
+{##}
+{#                    <div class="unit-2 text-center border py-5 h-100 bg-white">#}
+{#                        <span class="icon fl-bigmug-line-map87 text-info" style="text-shadow: lightgray 2px 2px"></span>#}
+{#                        <h3 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Guarenas - Guatire</h3>#}
+{#                        <p class="mb-4 text-gray-500">Castillejo, Pueblo de Guatire, Villa Heroica, La Sabana, Buenaventura, El Ingenio, Palo Alto.</p>#}
+{#                        <a href="{% url 'cobertura' %}" class="btn btn-dark py-3 px-5 rounded-0" style="box-shadow: lightgray 2px 2px 2px 2px">Mas</a>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">#}
+{##}
+{#                    <div class="unit-2 text-center border py-5 h-100 bg-white">#}
+{#                        <span class="icon fl-bigmug-line-map87 text-info" style="text-shadow: lightgray 2px 2px"></span>#}
+{#                        <h3 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Barlovento</h3>#}
+{#                        <p class="mb-4 text-gray-500">Higuerote, Puerto Encantado, Ciudad Balneario, Carenero, Sotillo.</p>#}
+{#                        <a href="{% url 'cobertura' %}" class="btn btn-dark py-3 px-5 rounded-0" style="box-shadow: lightgray 2px 2px 2px 2px">Mas</a>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{#    </div>#}
+{##}
+{# Servicios #}
+{#    <div class="site-section">#}
+{#        <div class="container">#}
+{#            <div class="row justify-content-center text-center mb-5">#}
+{#                <div class="col-md-6" data-aos="fade">#}
+{#                    <h1 style="text-shadow: lightgray 1px 1px">Servicios</h1>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#            <div class="row hosting">#}
+{#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">#}
+{##}
+{#                    <div class="unit-2 text-center border py-5 h-100 bg-white">#}
+{#                        <img src="{% static 'static/images/internet.jpeg' %}" class="rounded"><br><br>#}
+{#                        <h4 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Internet Banda Ancha</h4><br><br>#}
+{#                        <ul>#}
+{#                            <li class="text-left">Banda Ancha Residencial</li>#}
+{#                            <li class="text-left">Banda Ancha Comercial</li>#}
+{#                            <li class="text-left">Zonas Wi-Fi para Conjuntos Residenciales</li>#}
+{#                        </ul>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">#}
+{##}
+{#                    <div class="unit-2 text-center border py-5 h-100 bg-white">#}
+{#                        <img src="{% static 'static/images/videovigilancia.jpeg' %}" class="rounded"><br><br>#}
+{#                        <h4 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Video Vigilancia</h4><br><br>#}
+{#                        <ul>#}
+{#                            <li class="text-left">Monitoreo remoto</li>#}
+{#                            <li class="text-left">Grabacion de video en nuestras instalaciones</li>#}
+{#                            <li class="text-left">Facilidades para que el cliente acceda a sus cámaras en tiempo real</li>#}
+{#                            <li class="text-left">Tecnología de punta para operación diurna y nocturna</li>#}
+{#                        </ul>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">#}
+{##}
+{#                    <div class="unit-2 text-center border py-5 h-100 bg-white">#}
+{#                        <img src="{% static 'static/images/valor.jpeg' %}" class="rounded" height="35%"><br><br>#}
+{#                        <h4 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Valor Agregado</h4><br><br>#}
+{#                        <ul>#}
+{#                            <li class="text-left">Telecomunicaciones</li>#}
+{#                            <li class="text-left">Elaboración y alojamiento de páginas web</li>#}
+{#                            <li class="text-left">Hosting</li>#}
+{#                            <li class="text-left">Consultoría y Soporte Técnico Avanzado</li>#}
+{#                            <li class="text-left">Seguridad IT</li>#}
+{#                        </ul>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{#    </div>#}
+{##}
+{# Siguenos en RRSS #}
+{#    <div class="site-section bg-light">#}
+{#        <div class="container">#}
+{#            <div class="row justify-content-center text-center mb-5">#}
+{#                <div class="col-md-6" data-aos="fade">#}
+{#                    <h2 style="text-shadow: lightgray 1px 1px">Siguenos en nuestras Redes Sociales</h2>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="row hosting">#}
+{#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">#}
+{##}
+{#                    <div class="unit-2 text-center border py-5 h-100 bg-white">#}
+{#                        <span class="icon fl-bigmug-line-map87 text-info" style="text-shadow: lightgray 2px 2px"></span>#}
+{#                        <h3 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Caracas</h3>#}
+{#                        <p class="mb-4 text-gray-500">Los Ruices, El Encantado / Macaracuay, Valle Arriba, Santa Fe, Santa Rosa de Lima</p>#}
+{#                        <a href="{% url 'cobertura' %}" class="btn btn-dark py-3 px-5 rounded-0" style="box-shadow: lightgray 2px 2px 2px 2px">Mas</a>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">#}
+{##}
+{#                    <div class="unit-2 text-center border py-5 h-100 bg-white">#}
+{#                        <span class="icon fl-bigmug-line-map87 text-info" style="text-shadow: lightgray 2px 2px"></span>#}
+{#                        <h3 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Guarenas - Guatire</h3>#}
+{#                        <p class="mb-4 text-gray-500">Castillejo, Pueblo de Guatire, Villa Heroica, La Sabana, Buenaventura, El Ingenio, Palo Alto.</p>#}
+{#                        <a href="{% url 'cobertura' %}" class="btn btn-dark py-3 px-5 rounded-0" style="box-shadow: lightgray 2px 2px 2px 2px">Mas</a>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">#}
+{##}
+{#                    <div class="unit-2 text-center border py-5 h-100 bg-white">#}
+{#                        <span class="icon fl-bigmug-line-map87 text-info" style="text-shadow: lightgray 2px 2px"></span>#}
+{#                        <h3 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Barlovento</h3>#}
+{#                        <p class="mb-4 text-gray-500">Higuerote, Puerto Encantado, Ciudad Balneario, Carenero, Sotillo.</p>#}
+{#                        <a href="{% url 'cobertura' %}" class="btn btn-dark py-3 px-5 rounded-0" style="box-shadow: lightgray 2px 2px 2px 2px">Mas</a>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{##}
+{##}
+{#            <div class="row hosting">#}
+{#            <div class="col-lg-8 col-md-10 mx-auto">#}
+{#                <ul class="list-inline text-center">#}
+{##}
+{#                    <li class="list-inline-item">#}
+{#                        <a href="https://www.linkedin.com/company/it-security-solutions/about/">#}
+{#                      <span class="fa-stack fa-lg">#}
+{#                        <i class="fa fa-circle fa-stack-2x"></i>#}
+{#                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>#}
+{#                      </span>#}
+{#                        </a>#}
+{#                    </li>#}
+{#                    <li class="list-inline-item">#}
+{#                        <a href="https://www.facebook.com/IT-Security-Solutions-182264735648689/">#}
+{#                      <span class="fa-stack fa-lg">#}
+{#                        <i class="fa fa-circle fa-stack-2x"></i>#}
+{#                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>#}
+{#                      </span>#}
+{#                        </a>#}
+{#                    </li>#}
+{#                    <li class="list-inline-item">#}
+{#                        <a href="https://twitter.com/ITSecurity_ve">#}
+{#                      <span class="fa-stack fa-lg">#}
+{#                        <i class="fa fa-circle fa-stack-2x"></i>#}
+{#                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>#}
+{#                      </span>#}
+{#                        </a>#}
+{#                    </li>#}
+{#                    <li class="list-inline-item">#}
+{#                        <a href="#">#}
+{#                      <span class="fa-stack fa-lg">#}
+{#                        <i class="fa fa-circle fa-stack-2x"></i>#}
+{#                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>#}
+{#                      </span>#}
+{#                        </a>#}
+{#                    </li>#}
+{#                </ul>#}
+{#            </div>#}
+{#        </div>#}
+{#        </div>#}
+{#    </div>#}
+{##}
+{#{% endblock %}#}
+
+{#{% block localtime %}#}
+{#    {{ localtime }}#}
+{#{% endblock %}#}
+
+{#{% block year %}#}
+{#    {{ year }}#}
+{#{% endblock %}#}

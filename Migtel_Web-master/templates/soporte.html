@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block soporte %}
+    {# Soporte #}
+    <div class="site-section">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-md-6" data-aos="fade">
+                    <h1 style="text-shadow: lightgray 1px 1px">Soporte</h1>
+                </div>
+            </div>
+
+            <div class="row hosting">
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+
+                    <div class="unit-2 text-center border py-5 h-100 bg-white">
+                        <img src="{% static 'static/images/internet.jpeg' %}" class="rounded" alt=""><br><br>
+                        <h4 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Internet Banda Ancha</h4><br><br>
+                        <ul>
+                            <li class="text-left">Banda Ancha Residencial</li>
+                            <li class="text-left">Banda Ancha Comercial</li>
+                            <li class="text-left">Zonas Wi-Fi para Conjuntos Residenciales</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+
+                    <div class="unit-2 text-center border py-5 h-100 bg-white">
+                        <img src="{% static 'static/images/videovigilancia.jpeg' %}" class="rounded"><br><br>
+                        <h4 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Video Vigilancia</h4><br><br>
+                        <ul>
+                            <li class="text-left">Monitoreo remoto</li>
+                            <li class="text-left">Grabacion de video en nuestras instalaciones</li>
+                            <li class="text-left">Facilidades para que el cliente acceda a sus cámaras en tiempo real</li>
+                            <li class="text-left">Tecnología de punta para operación diurna y nocturna</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+
+                    <div class="unit-2 text-center border py-5 h-100 bg-white">
+                        <img src="{% static 'static/images/valor.jpeg' %}" class="rounded" height="35%"><br><br>
+                        <h4 class="h4 text-black" style="text-shadow: lightgray 1px 1px">Valor Agregado</h4><br><br>
+                        <ul>
+                            <li class="text-left">Telecomunicaciones</li>
+                            <li class="text-left">Elaboración y alojamiento de páginas web</li>
+                            <li class="text-left">Hosting</li>
+                            <li class="text-left">Consultoría y Soporte Técnico Avanzado</li>
+                            <li class="text-left">Seguridad IT</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-12 col-lg-12 mb-5 mb-lg-12" data-aos="fade" data-aos-delay="100">
+                <div class="h-100 bg-white">
+                    <br><br>
+                    <div class="d-flex align-items-center mb-3 unit-3-heading text-justify">
+                    </div>
+                    <div class="unit-3-body">
+                        <p>
+                            La calidad de vida es sinónimo de comodidad y la brindamos a través de nuestros servicios.</p>
+                        <p>
+                            Internet se ha convertido en un servicio indispensable en el día a día del ser humano. Más aún, es el principal promotor de la comodidad, porque a través de el se facilita el uso de cualquier otro servicio; por ello velamos por calidad de vida propia para nuestra sociedad, brindando un servicio de internet  confiable y veloz.</p>
+                        <p>
+                            Contamos con tecnología capaz de monitorear el tráfico, para así optimizar el resultado final: Elevar nuestra calidad de vida</p>
+                        <p>De manera especial estamos ofreciendo servicios diferenciales, el primera de ellos es el servicio de Zonas Wi-Fi para Conjuntos Residenciales, y el segundo, consiste en el servicio de video vigilancia Nivel I a objeto de vigilar la entrada a los conjuntos residenciales, la grabación es realizada en nuestras instalaciones a los fines de contar con elementos probatorios y confiables en caso de ser necesario.</p><br>
+                        <center><a href="{% url 'solicitar' %}" class="btn btn-dark py-3 px-5 rounded-0" style="box-shadow: lightgray 2px 2px 2px 2px">Solicitar servicio</a></center>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block localtime %}
+    {{ localtime }}
+{% endblock %}
+
+{% block year %}
+    {{ year }}
+{% endblock %}
